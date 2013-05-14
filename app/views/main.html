@@ -1,0 +1,18 @@
+<div class="login" ng-control="MainCtrl">
+  <div class="login-screen">
+    <div class="login-icon">
+      <canvas id="fog" width="128" height="128">
+      </canvas>
+      <h4><small>{{init}}</small></h4>
+    </div>
+    <div class="login-form">
+      <div class="control-group">
+        <input type="text" class="login-field" value="" placeholder="ciudad" id="ciudad" ng-model="ciudad" ng-change="borrar()" ui-keypress="{13:'keypressCallback($event)'}">
+        <label class="login-field-icon fui-eye-16" for="login-pass"></label>
+      </div>
+      <a class="btn btn-primary btn-large btn-block" href="#" ng-click="update(ciudad)">Enviar</a>
+      <a class="login-link" href="#">Quieres saber funciona?</a>
+    </div>
+  </div>
+</div>
+
