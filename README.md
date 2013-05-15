@@ -1,4 +1,4 @@
-# Minimal Egurladi App
+# Minimal Eguraladi App
 
 Demo [minimaleguraldiapp.interzonas.info](http://minimaleguraldiapp.interzonas.info/)
 [Post profundizando](http://blog.elfilo.net/articles/minimal-eguraldi-app-con-angularjs/index.html)
