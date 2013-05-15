@@ -6,6 +6,7 @@ angular.module('favoritosApp')
     icons.add('fog', Skycons.FOG);
     icons.play();
     $scope.init = 'Minimal app del tiempo';
+
     $scope.update = function (ciudad) {
 	    $scope.tiempo = Tiempo.get({ciudad: ciudad}, function (datos) {
 	    	if(typeof(datos[0].error) != "undefined"){
@@ -18,6 +19,7 @@ angular.module('favoritosApp')
 	    	}
 	    });
     }
+
     $scope.keypressCallback = function($event) {
 	    $scope.tiempo = Tiempo.get({ciudad: ciudad.value},function(datos){
 	    	if(typeof(datos[0].error) != "undefined"){
@@ -31,7 +33,6 @@ angular.module('favoritosApp')
 	    });
 		$event.preventDefault();
 	};
-
 
   	var _comparaIconos =function(icon){
   		if(icon ==='clear'){
